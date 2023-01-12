@@ -462,9 +462,7 @@ body{
 	padding-bottom:4rem;
 	padding-top:4rem;
 }
-.hold{
-	width:48%;
-}
+
 .hold input{
     width:100%;
 	border-radius:0px;
@@ -502,13 +500,14 @@ body{
 	margin-top:20px;
 }
 .mail input{
-	height:40px;
-	width:40%;
+	/* height:40px; */
+	/* width:40%; */
+	padding:10px;
 	border:none;
 }
 .mail a{
 	text-decoration:none;
-	padding:12px 15px 12px 15px;
+	padding:10px 15px 10px 15px;
 	color:white;
 	border-radius:5px;
 	background-color:#eb5d1e;
@@ -585,6 +584,14 @@ body{
 		display:flex;
 		justify-content:space-between;
 	}
+	.hold{
+	width:48%;
+}
+.name{
+	display:flex;
+	justify-content:space-between;
+}
+
 }
 
 

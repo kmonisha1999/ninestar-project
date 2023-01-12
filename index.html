@@ -586,7 +586,7 @@
 			
 			   <div class="col-sm-12 col-md-12 col-lg-6 mt-5 shadow-sm" style="border-top:3px solid #eb5d1e; border-bottom:3px solid #eb5d1e; ">
 			        <div class="form mt-3 mb-5">
-					    <div class="name d-flex justify-content-between">
+					    <div class="name">
 						    <div class="mb-3 hold">
 							  <label for="exampleFormControlInput1" class="form-label">Your Name</label>
 							  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="   Your Name">
@@ -597,7 +597,7 @@
 							</div>
 						</div>
 						<div class="sub">
-						    <div class="mb-3 mt-3">
+						    <div class="mb-3 mt-1">
 							  <label for="exampleFormControlInput1" class="form-label">Subject</label>
 							  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="   Subject">
 							</div>
@@ -708,10 +708,19 @@
 			
 	    </div>
 	</div>
-    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>
+ 
+        const navLinks=document.querySelectorAll(".nav-item") ;
+        const  menuToggle=document.getElementById("navbarNavDropdown");
+        let bsCollabse=new bootstrap.Collapse(menuToggle,{toggle:false})
+        navLinks.forEach((e) =>{
+            e.addEventListener("click",()=>{bsCollabse.toggle()})
+        })
+     
 	
 	
-	
+	</script>
 	
 	
 	
